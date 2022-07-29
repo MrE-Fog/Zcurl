@@ -18,7 +18,7 @@ NGHTTP2="1.47.0"        # https://nghttp2.org/
   s.homepage         = 'https://github.com/lZackx/Zcurl'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lZackx' => 'lzackx@lzackx.com' }
-  s.deployment_target= '9.0'
+  s.ios.deployment_target = "9.0"
   s.source           = { :git => 'https://github.com/lZackx/Zcurl.git', :tag => s.version.to_s }
   s.source_files = 'Zcurl/Classes/**/*'
   s.public_header_files = 'Zcurl/Classes/include/**/*'
