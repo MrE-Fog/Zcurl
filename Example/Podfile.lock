@@ -1,0 +1,16 @@
+PODS:
+  - Zcurl (1.0.0)
+
+DEPENDENCIES:
+  - Zcurl (from `../`)
+
+EXTERNAL SOURCES:
+  Zcurl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Zcurl: 79a44ab4180798fc159184a20c4003f6d020d7e2
+
+PODFILE CHECKSUM: 2ad08eed3fb23449bdb6a88d1341b5350515b05a
+
+COCOAPODS: 1.11.3
