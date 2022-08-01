@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Zcurl'
-  s.version          = '7.83.1'
-  s.summary          = 'curl + openssl + nghttp2 + crypto'
+  s.version          = '1.0.0'
+  s.summary          = 'curl_7_83_1 + openssl_1_1_1o + nghttp2_1_47_0 + crypto'
   s.description      = <<-DESC
 LIBCURL="7.83.1"        # https://curl.haxx.se/download.html
 OPENSSL="1.1.1o"        # https://www.openssl.org/source/
