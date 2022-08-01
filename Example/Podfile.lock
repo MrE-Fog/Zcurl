@@ -1,5 +1,5 @@
 PODS:
-  - Zcurl (1.0.0)
+  - Zcurl (7.83.1)
 
 DEPENDENCIES:
   - Zcurl (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Zcurl: 79a44ab4180798fc159184a20c4003f6d020d7e2
+  Zcurl: a01682a83173c3ab3fc5a6e30333f4386e26a6ed
 
 PODFILE CHECKSUM: 2ad08eed3fb23449bdb6a88d1341b5350515b05a
 
