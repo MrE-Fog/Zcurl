@@ -21,7 +21,9 @@ NGHTTP2="1.47.0"        # https://nghttp2.org/
   s.ios.deployment_target = "9.0"
   s.source           = { :git => 'https://github.com/lZackx/Zcurl.git', :tag => s.version.to_s }
   s.source_files = 'Zcurl/Classes/**/*'
-  s.public_header_files = 'Zcurl/Classes/include/**/*'
+  s.public_header_files = [
+  'Zcurl/Classes/include/**/*.h',
+  ]
   s.resource = 'Zcurl/Assets/**/*'
   s.vendored_frameworks = [
   'xcframework/libcurl.xcframework',
