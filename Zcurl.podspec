@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Zcurl'
-  s.version          = '1.0.0'
+  s.version          = '7.83.1.1'
   s.summary          = 'curl_7_83_1 + openssl_1_1_1o + nghttp2_1_47_0 + crypto'
   s.description      = <<-DESC
 LIBCURL="7.83.1"        # https://curl.haxx.se/download.html
@@ -21,9 +21,6 @@ NGHTTP2="1.47.0"        # https://nghttp2.org/
   s.ios.deployment_target = "9.0"
   s.source           = { :git => 'https://github.com/lZackx/Zcurl.git', :tag => s.version.to_s }
   s.source_files = 'Zcurl/Classes/**/*'
-  s.public_header_files = [
-  'Zcurl/Classes/include/**/*.h',
-  ]
   s.resource = 'Zcurl/Assets/**/*'
   s.vendored_frameworks = [
   'xcframework/libcurl.xcframework',

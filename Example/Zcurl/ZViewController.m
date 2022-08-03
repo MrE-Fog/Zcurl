@@ -7,8 +7,9 @@
 //
 
 #import "ZViewController.h"
+#import <Zcurl/Zcurl.h>
 
-@interface ZViewController ()
+@interface ZViewController () <ZcurlManagerDelegate>
 
 @end
 
@@ -18,12 +19,39 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"%@", [NSBundle bundleForClass:[Zcurl class]]);
+    
+    [ZcurlManager shared].delegate = self;
+    
+    [self curl:@"https://github.com/lzackx/Zcurl"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)curl:(NSString *)url {
+    
+    [[ZcurlManager shared] performWithURLString:url];
+}
+
+// MARK: - CURLToolDelegate
+- (void)curl:(CURL *)curl willPerformWithURL:(NSURL *)url {
+    
+    NSLog(@"url: %@", url);
+}
+
+- (void)curl:(CURL *)curl
+didPerformWithURL:(NSURL *)url
+        info:(NSDictionary *)info {
+    
+    NSLog(@"url: %@", url);
+    NSLog(@"@%@", info);
+
 }
 
 @end
